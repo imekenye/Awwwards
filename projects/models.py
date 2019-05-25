@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+from accounts.models import Profile
 
 
 # Create your models here.
@@ -19,3 +20,12 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'pk': self.pk})
+
+
+class Rating(models.Model):
+    design = models.IntegerField(blank=True, default=0)
+    usability = models.IntegerField(blank=True, default=0)
+    content = models.IntegerField(blank=True, default=0)
+    average_score = models.IntegerField(blank=True, default=0)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)

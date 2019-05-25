@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-default">
+    <nav class="navbar navbar-horizontal navbar-expand-lg navbar-dark bg-default">
         <div class="container">
             <a class="navbar-brand" href="{% url 'projects-home' %}">Awwwards</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
@@ -32,6 +32,12 @@
                         <a class="nav-link nav-link-icon" href="{% url 'profile' %}">
 
                             <span class="nav-link-inner--text  text-white">Profile</span>
+                        </a>
+                    </li>
+                         <li class="nav-item">
+                        <a class="nav-link nav-link-icon" href="{% url 'post-create' %}">
+
+                            <span class="nav-link-inner--text  text-white">Submit</span>
                         </a>
                     </li>
                     <li class="nav-item">

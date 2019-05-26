@@ -43,7 +43,7 @@ Django 2.2.1
 
 or just use this
 
-`$ git clone https://github.com/watibini/awward.git`
+`$ git clone https://github.com/imekenye/awwward.git`
 
 4. Run this command to open the app
 

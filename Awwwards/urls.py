@@ -20,12 +20,14 @@ from projects import views
 from django.conf import settings
 from django.conf.urls.static import static
 from accounts import views as user_views
+from projects.views import PostView, ProfileView,PostListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='projects-home'),
+    path('', PostListView.as_view(), name='projects-home'),
     path('projects/', include('projects.urls')),
-    path('api/', include('projects.urls')),
+    path('api/all_posts/', PostView.as_view(), name='allposts'),
+    path('api/all_profile/', ProfileView.as_view(), name='allprofile'),
     path('register/', user_views.register, name='register'),
     path('profile/', user_views.profile, name='profile'),
     path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),

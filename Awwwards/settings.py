@@ -158,7 +158,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'Awwwards/static/'),
     os.path.join(BASE_DIR, 'Awwwards/static/css/'),
     os.path.join(BASE_DIR, 'Awwwards/static/js/'),
-    os.path.join(BASE_DIR, 'Awwwards/static/images/'),
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

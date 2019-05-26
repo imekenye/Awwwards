@@ -49,7 +49,7 @@ or just use this
 
 `$ python3.6 manage.py runserver`
 
-
+Pre-configured Admin details are: Password: 1234 Username: admin2
 ## BDD
 
 | Behavior        | Result |

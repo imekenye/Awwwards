@@ -1,17 +1,17 @@
-##AWWWARDS
+## AWWWARDS
 Web application built in django that allows users to review/view projects from other users and also post their own.
-###Author
+### Author
 Isaiah Mekenye
-###Live link
+### Live link
 Click on this link https://im-awwwards.herokuapp.com/
-###Api Links
+### Api Links
 use the following API links to get access to the apps JSON files using the endpoints
 <code>/api/all_posts</code>
 &
 <code>/api/all_profile</code>at the end of the link
-###Project Description
+### Project Description
 This application allows users to share their website projects and let users rate/review
-###Technologies used
+### Technologies used
 Python 3.6<br>
 Django 2.2.1
 ## Application requirements
